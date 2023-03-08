@@ -1,0 +1,406 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.bg-img{
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0, 0.5),
+  rgba(0,0,0, 0.5)),url(./Photos/futuristic-bg.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.a-link{
+  margin-left: 4rem;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+  margin-left: 2rem;
+}
+.a-link a:hover{
+border-bottom: 2px solid rgb(224, 113, 10);
+}
+.o-box:hover{
+    background-color: rgb(214, 98, 40);
+    padding: 0.5rem 1rem;
+}
+.bg-h{
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.bg-p{
+  font-size: 1rem;
+  padding-top: 3.2rem;
+  padding-left: 1rem;
+  color: rgb(171, 170, 170);
+}
+.playbutton{
+  padding-left: 5rem;
+}
+.ca a{
+  text-decoration: none;
+  font-size:1rem ;
+  display: inline-block;
+  background-color: rgb(235, 122, 56);
+  color: white;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+
+}
+.ca a:not(:first-child){
+  border: 1px solid white;
+  margin-left: 1.3rem;
+  background-color: transparent;
+}
+
+.bg-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 6rem;
+}
+.left-content{
+  width: 47%;
+}
+.right-content{
+  width: 35%;
+}
+.quo{
+  display: flex;
+}
+.zero{
+  padding-top: 6rem;
+  padding-left: 3rem;
+}
+
+
+
+
+
+.section2{
+  padding: 8rem 6rem;
+
+}
+.sec2-h{
+  color: black;
+  width: 70%;
+  margin: auto;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+.bottom{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+ 
+
+}
+.bottom img{
+  width: 16rem;
+  height: 20rem;
+}
+.img-sec2{
+  position: relative;
+ 
+}
+.overlay{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 0.2rem;
+  width: 100%;
+  color: white;
+  padding: 1rem;
+  background: linear-gradient(rgb(102, 100, 100),rgb(109, 106, 106));
+}
+.overlay a{
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.5rem;
+  background-color:  rgb(237, 91, 12);
+ 
+}
+.overlay h4,p{
+  padding: 0.2rem;
+}
+.overlay p{
+  color: rgb(165, 164, 164);
+}
+.icon{
+  display: flex;
+}
+.icon img{
+  width: 10%;
+  height: 10%;
+}
+/* section3 */
+
+.section3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 6rem;
+}
+.section3 img{
+  width: 45%;
+  height: 22rem;
+}
+.sec3-h{
+  color: black;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.sec-content{
+ width: 50%;
+}
+
+.sec-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* section 4 styling */
+.section4{
+  padding: 7rem 6rem;
+  
+}
+.sec4-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 0;
+}
+.sec4-top h3{
+  width: 40%;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.sec4-top img{
+  display: inline-block;
+  padding: 1rem;
+  
+}
+.l-arrow{
+  background-color: rgb(231, 156, 124);
+}
+.r-arrow{
+  background-color: #e87b22;
+}
+.movie{
+  display: flex;
+  justify-content: space-between;
+}
+.movie a{
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+.orange{
+color: rgb(237, 91, 12);
+}
+.movie h3{
+  font-size: 1.4rem;
+}
+.movie p{
+  margin: 0.5rem 0;
+  color: rgb(135, 135, 135);
+  font-size: 0.9rem;
+}
+.down{
+  color: white;
+  background-color: rgb(237, 91, 12);
+  font-size: 0.9rem;
+  padding: 0.8rem 2.5rem;
+}
+.game-week{
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ grid-template-rows: repeat(2,1fr);
+ gap: 4rem;
+}
+.movie img{
+  width: 30% ;
+}
+.movie .right{
+padding: 0.5rem 1rem 0 2rem;
+}
+@media screen and  (max-width:768px){
+  .game-week{
+    display:grid;
+    grid-template-columns: none;
+ grid-template-rows: repeat(2,1fr);
+  }
+  .section4{
+    padding: 1rem;
+  }
+  .movie{
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  .movie .right{
+    padding:3rem 4rem;
+    }
+    .movie img{
+      width: 60% ;
+    }
+
+
+    .footer{
+      margin-top: 8rem;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .flogo{
+      width: 100%;
+    }
+    .footer-left{
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-left>div{
+      margin-top: 2rem;
+    }
+    li{
+     
+      margin-top: 0rem;
+    }
+}
+
+/* section5 */
+.section5{
+  padding: 4rem 6rem;
+  background-color: black;
+}
+.most-played{
+  display: flex;
+  padding: 5rem 0;
+}
+.section5 h3{
+  font-size: 2rem;
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+.sec-top{
+  width: 30%;
+  height: 40%;
+}
+.bot-one,.bot-two{
+  width: 45%;
+}
+.sec5-right{
+  padding-left: 3rem;
+  padding-right: 4rem;
+}
+.bot-two{
+  margin-left: 2rem;
+} 
+.bot-img{
+  margin-top: 5rem;
+}
+.sec5-right p{
+  color: white;
+}
+/* section6 */
+.section6{
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background: linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.5)),url(./Photos/Rectangle\ 606.png);
+}
+.section6 h3{
+  font-size: 2.5rem;
+  color:white;
+}
+.section6 p{
+  padding: 2rem;
+  color: white;
+} 
+.mid{
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  padding: 10rem 0;
+}
+.mid a{
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 1rem;
+  padding: 1.2rem 2rem;
+}
+
+/* footer */
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+   padding: 8rem 6rem;
+   background-color: black;
+   
+}
+.footer-left{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+ul{
+  list-style-type: none;
+}
+.social{
+  margin-top: 1rem;
+  display: flex;
+
+}
+.social img:not(:first-child){
+  margin-left: 1rem;
+}
+.flogo{
+  width: 30%;
+}
+
+li{
+  color: rgb(246, 242, 242);
+  margin-top: 2rem;
+}
+.footer-p{
+  margin-top: 2rem;
+  color: rgb(255, 253, 253);
+}
+.footer h3{
+  color: white;
+}
+.bord{
+  
+  height: 20vh;
+  border-top: 2px solid rgb(255, 251, 251);
+  background-color: black;
+}
